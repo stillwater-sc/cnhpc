@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: dmm-blas-service
+spec:
+  selector:
+    app: dmm-blas
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
