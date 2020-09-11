@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: express-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/stillwater-sc/cnhpcs.git
+    targetRevision: HEAD
+    path: argo/express-app
+    directory:
+      recurse: true
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: express-app
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: false
