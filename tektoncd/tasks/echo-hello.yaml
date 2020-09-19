@@ -1,0 +1,19 @@
+---
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: echo-hello-world
+spec:
+  steps:
+    - name: hello
+      image: ubuntu
+      command:
+        - echo
+      args:
+        - "hello"
+    - name: world
+      image: ubuntu
+      command:
+        - echo
+      args:
+        - "world!"
