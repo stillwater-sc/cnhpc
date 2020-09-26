@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/stillwater-sc/cnhpcs.git
     targetRevision: HEAD
-    path: argo/express-app
+    path: apps/express-app
     directory:
       recurse: true
   destination:
