@@ -13,8 +13,6 @@
     "express": "~4.17.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
-    "morgan": "~1.9.1",
-    "snyk": "^1.563.0"
-  },
-  "snyk": true
+    "morgan": "~1.10.0"
+  }
 }
